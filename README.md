@@ -15,8 +15,10 @@ Run docker image at current folder containing `depot_tools/` and `src/`
 docker run -v $(pwd):/webrtc-android -it --rm centos8:webrtc bash
 ```
 
-Compile WebRTC
+Compile WebRTC to generate one aar file
 
 ```
 tools_webrtc/android/build_aar.py --arch arm64-v8a --verbose
 ```
+
+>Note: To compile aar file that can be used in Unity project, follow the guides in com.unity.webrtc project.
